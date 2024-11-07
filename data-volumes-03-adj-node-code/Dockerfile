@@ -8,7 +8,7 @@ RUN npm install
 
 COPY . .
 
-VOLUME [ "/app/feedback" ] #this creates anonymous volume after running the container you can check docker volume ls u can see volume
+#VOLUME [ "/app/feedback" ] #this creates anonymous volume after running the container you can check docker volume ls u can see volume
 
 EXPOSE 124
 
