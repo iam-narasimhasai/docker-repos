@@ -1,0 +1,6 @@
+docker network create 3tierapp
+
+docker run -d -e MONGO_INITDB_ROOT_USERNAME=max -e MONGO_INITDB_ROOT_PASSWORD=secret -p 27017:27017 -v data:/data/db --network 3tierapp --name database  mongo
+
+
+docker run -d -p 129:129 --network 3tierapp --name backend back
